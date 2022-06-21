@@ -15,7 +15,16 @@ let fetchAll = async () => {
 
 let displayResult = async () => {
 
+    document.getElementById("btn-fetch").textContent = 'Fetch...';
+
     const data = await fetchAll();
+
+    document.getElementById("header").insertAdjacentHTML(
+        'afterend',
+        `<div id="cards" class="pt-5 pb-5">
+      
+        </div>`
+    )
 
     data.forEach((res) => {
         document.getElementById("cards").insertAdjacentHTML(
@@ -28,5 +37,7 @@ let displayResult = async () => {
             </div>`
         );
     })
+
+    window.scrollBy(0, window.innerHeight);
 
 }

@@ -13,9 +13,16 @@ header{
   min-height: 100vh;
 }
 
-#btn-lihat{
+#btn-fetch{
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+  background-color: rgb(134, 134, 134) ;
 }
+
+#btn-fetch:hover{
+  background-color: #9a8747;;
+}
+
+
 
 #judul{
   color: rgb(241, 241, 241);
